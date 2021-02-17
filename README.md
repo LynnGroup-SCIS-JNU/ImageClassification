@@ -4,6 +4,8 @@ Workflow that shows how to train neural networks with GPU support. The goal is t
 
 
 ## Getting started
+$ git clone https://github.com/LynnGroup-SCIS-JNU/Tarun-DeepLearning.git
+$ cd Tarun-DeepLearning
 
 1. Install [Docker](https://docs.docker.com/install/)
 
