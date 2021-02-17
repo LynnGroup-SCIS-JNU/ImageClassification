@@ -4,8 +4,6 @@ Workflow that shows how to train neural networks with GPU support. The goal is t
 
 
 ## Getting started
-$ git clone https://github.com/LynnGroup-SCIS-JNU/Tarun-DeepLearning.git
-$ cd Tarun-DeepLearning
 
 1. Install [Docker](https://docs.docker.com/install/)
 
@@ -18,6 +16,8 @@ $ cd Tarun-DeepLearning
 
 Run training container (**NB:** you might have to increase the container resources [[link](https://docs.docker.com/config/containers/resource_constraints/)])
 ```
+$ git clone https://github.com/LynnGroup-SCIS-JNU/Tarun-DeepLearning.git
+$ cd Tarun-DeepLearning
 $ docker run -it -v $PWD:$PWD -w $PWD lynngroup/tarun:plantvillage-gpu python plantvillage.py  
 ```
 
