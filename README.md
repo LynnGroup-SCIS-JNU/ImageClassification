@@ -18,6 +18,7 @@ Run training container (**NB:** you might have to increase the container resourc
 ```
 $ git clone https://github.com/LynnGroup-SCIS-JNU/Tarun-DeepLearning.git
 $ cd Tarun-DeepLearning
+# Open "plantvillage.py" and change the path of input according to yur machine.
 $ docker run -it -v $PWD:$PWD -w $PWD lynngroup/tarun:plantvillage-gpu python plantvillage.py  
 ```
 
