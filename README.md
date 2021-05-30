@@ -42,24 +42,24 @@ We trained plant leaf image for 35 epochs (~98.84% accuracy on validation set):
 
 ## Setting UP Kubernetess 
 ```
-docker build -t plantvillage .
+$ docker build -t plantvillage .
 
-docker images
+$ docker images
 
-docker tag <image-id> <docker-hub-id>/<image name> (Example : docker tag 79ee5388e47a lynngroup/plantvillage)
+$ docker tag <image-id> <docker-hub-id>/<image name> (Example : docker tag 79ee5388e47a lynngroup/plantvillage)
 
-docker push <docker-hub-id>/<image name> (Example:  docker push lynngroup/plantvillage)  
+$ docker push <docker-hub-id>/<image name> (Example:  docker push lynngroup/plantvillage)  
   
 After image is pushed -
 (Change the image name as in above step)
 
-kubectl apply -f pod.yaml
+$ kubectl apply -f pod.yaml
 
-kubectl apply -f nodeport.yaml
+$ kubectl apply -f nodeport.yaml
 
 check pod logs using : Example:  
 
-kubectl logs -f <pod-name> - You should be able to see your python app output here 
+$ kubectl logs -f <pod-name> - You should be able to see your python app output here 
 
 ``` 
 
