@@ -16,8 +16,8 @@ Workflow that shows how to train neural networks with GPU support. The goal is t
 
 Run training container (**NB:** you might have to increase the container resources [[link](https://docs.docker.com/config/containers/resource_constraints/)])
 ```
-$ git clone https://github.com/LynnGroup-SCIS-JNU/Tarun-DeepLearning.git
-$ cd Tarun-DeepLearning
+$ git clone https://github.com/LynnGroup-SCIS-JNU/ImageClassification.git
+$ cd ImageClassification
 # Open "plantvillage.py" and change the path of input according to your machine.
 # If you have 1 CPU,following command guarantees the container at most 50% of the CPU every second.
 $ docker run -it  --cpus=".5" -v $PWD:$PWD -w $PWD lynngroup/tarun:plantvillage-gpu python plantvillage.py  
